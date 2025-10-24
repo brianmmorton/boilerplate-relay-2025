@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🏠 Setting up Real Estate App..."
+echo "🏠 Setting up Boilerplate App..."
 
 # Check if Node.js is installed
 if ! command -v node &> /dev/null; then

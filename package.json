@@ -1,7 +1,7 @@
 {
-  "name": "real-estate-app",
+  "name": "boilerplate-app",
   "version": "1.0.0",
-  "description": "Real Estate Application with React frontend and Node.js backend",
+  "description": "Boilerplate Application with React frontend and Node.js backend",
   "private": true,
   "workspaces": [
     "apps/*"

@@ -7,3 +7,5 @@ others and implement custom authentication and other solutions, but was used her
 Clone the repo, and start by copying apps/api/.env.example to apps/api/.env.
 You'll need to fill in those variables.
 Create a supabase url to connect your project to.
+
+Run scripts/setup.sh
