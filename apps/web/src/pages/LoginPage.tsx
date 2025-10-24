@@ -42,7 +42,7 @@ export function LoginPage() {
           </h1>
           <p className="text-muted-foreground mt-2">
             {isSignUp 
-              ? 'Join us to start your real estate journey' 
+              ? 'Join us to start your journey' 
               : 'Welcome back! Please sign in to your account'
             }
           </p>

@@ -9,12 +9,11 @@ export function HomePage() {
     <div className="container mx-auto px-4 py-16">
       <div className="text-center space-y-6">
         <h1 className="text-5xl font-bold text-foreground">
-          Welcome to RealEstate App
+          Welcome to Boilerplate App
         </h1>
         
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Find your dream property with our comprehensive real estate platform. 
-          Browse listings, connect with agents, and make your property dreams come true.
+          This is a boilerplate application for a highly scalable application. It uses GraphQL, TypeGraphQL, Relay, React, and Typescript. For database, it uses supabase, which you can swap for others and implement custom authentication and other solutions, but was used here for ease of implementation.
         </p>
         
         <div className="flex justify-center space-x-4">
@@ -23,17 +22,11 @@ export function HomePage() {
               <Link to="/dashboard">
                 <Button size="lg">Go to Dashboard</Button>
               </Link>
-              <Link to="/calculator">
-                <Button variant="outline" size="lg">Investment Calculator</Button>
-              </Link>
             </>
           ) : (
             <>
               <Link to="/login">
                 <Button size="lg">Get Started</Button>
-              </Link>
-              <Link to="/calculator">
-                <Button variant="outline" size="lg">Investment Calculator</Button>
               </Link>
             </>
           )}
@@ -44,9 +37,9 @@ export function HomePage() {
             <div className="w-16 h-16 bg-primary rounded-full mx-auto flex items-center justify-center">
               <span className="text-2xl text-primary-foreground">🏠</span>
             </div>
-            <h3 className="text-xl font-semibold">Find Properties</h3>
+            <h3 className="text-xl font-semibold">GraphQL</h3>
             <p className="text-muted-foreground">
-              Search through thousands of properties in your area
+              GraphQL is used for the API. It is a query language for APIs that allows you to query the data you need, and nothing more.
             </p>
           </div>
           
@@ -54,19 +47,9 @@ export function HomePage() {
             <div className="w-16 h-16 bg-primary rounded-full mx-auto flex items-center justify-center">
               <span className="text-2xl text-primary-foreground">👥</span>
             </div>
-            <h3 className="text-xl font-semibold">Connect with Agents</h3>
+            <h3 className="text-xl font-semibold">TypeGraphQL</h3>
             <p className="text-muted-foreground">
-              Work with experienced real estate professionals
-            </p>
-          </div>
-          
-          <div className="text-center space-y-4">
-            <div className="w-16 h-16 bg-primary rounded-full mx-auto flex items-center justify-center">
-              <span className="text-2xl text-primary-foreground">🔑</span>
-            </div>
-            <h3 className="text-xl font-semibold">Get Keys</h3>
-            <p className="text-muted-foreground">
-              Complete your property purchase with confidence
+              TypeGraphQL is used for the API. It is a library that allows you to create a GraphQL API with TypeScript.
             </p>
           </div>
         </div>
