@@ -8,7 +8,17 @@ export default defineConfig({
       babel: {
         plugins: [['relay', { src: './src', schema: './schema.graphql' }]]
       }
-    })
+    }),
+    // Plugin to handle .graphql imports and map them to .graphql.ts files
+    {
+      name: 'relay-graphql-import',
+      resolveId(id) {
+        if (id.endsWith('.graphql') && !id.endsWith('.graphql.ts')) {
+          // Map .graphql imports to .graphql.ts files
+          return id + '.ts'
+        }
+      },
+    },
   ],
   resolve: {
     alias: {

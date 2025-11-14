@@ -58,11 +58,16 @@ scalar DateTimeISO
 
 type Mutation {
   createProperty(input: CreatePropertyInput!): Property!
-  createPropertyConfiguration(input: CreatePropertyConfigurationInput!): PropertyConfiguration!
+  createPropertyConfiguration(
+    input: CreatePropertyConfigurationInput!
+  ): PropertyConfiguration!
   deleteProperty(id: ID!): Boolean!
   deletePropertyConfiguration(id: ID!): Boolean!
   updateProperty(id: ID!, input: UpdatePropertyInput!): Property!
-  updatePropertyTaxInfo(id: ID!, input: UpdatePropertyTaxInfoInput!): PropertyConfiguration!
+  updatePropertyTaxInfo(
+    id: ID!
+    input: UpdatePropertyTaxInfoInput!
+  ): PropertyConfiguration!
   updateUserTaxProfile(input: UpdateUserTaxProfileInput!): User!
 }
 
@@ -123,8 +128,23 @@ type PropertyConfiguration {
   vacancyRate: Float!
 }
 
+type Product {
+  category: String!
+  createdAt: DateTimeISO!
+  description: String
+  id: ID!
+  imageUrl: String
+  inStock: Boolean!
+  name: String!
+  price: Float!
+  rating: Float
+  updatedAt: DateTimeISO!
+}
+
 type Query {
   me: User
+  product(id: String!): Product
+  products(search: String): [Product!]!
   properties: [Property!]!
   property(id: ID!): Property
   propertyConfiguration(id: ID!): PropertyConfiguration
